@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Studies from "@/components/Studies";
+
 
 export default function HomePage() {
   return (
