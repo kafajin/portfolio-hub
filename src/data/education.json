@@ -1,0 +1,60 @@
+{
+  "program": "Bachelor of Science in Computer Science",
+  "university": "Kristianstad University",
+  "location": "Kristianstad, Sweden",
+  "period": "2023–2026",
+  "graduation": "June 2026",
+  "vfu": "Internship (5 ECTS)",
+  "language": "Year 2 and 3 in English",
+  "overview": "An interdisciplinary program in computer science and systems development, with progression in programming methodology, software engineering, computer science fundamentals, and academic competencies.",
+  "goals": [
+    "Ability to independently and critically develop software-based systems",
+    "Knowledge in computer science, software development, mathematics, and data communication",
+    "Practical skills to work in project teams and apply theory in real-world contexts",
+    "Communicate technical knowledge effectively in both Swedish and English"
+  ],
+  "core_areas": [
+    "Algorithms & Data Structures",
+    "Operating Systems",
+    "Computer Networks & Security",
+    "Databases",
+    "Artificial Intelligence & Data Mining",
+    "Mathematics & Discrete Mathematics"
+  ],
+  "tracks_and_methods": [
+    "Programming paradigms: procedural, functional, object-oriented",
+    "Frontend and Backend development, mobile applications",
+    "Agile Web Development and Software Engineering (large-scale design)"
+  ],
+  "thesis": "Bachelor Thesis (15 ECTS)",
+  "courses": {
+    "year1": [
+      "Introduction to Computer Science (7.5 ECTS)",
+      "Fundamentals of Programming (7.5 ECTS)",
+      "Object-Oriented Programming in Java (7.5 ECTS)",
+      "Discrete Mathematics (7.5 ECTS)",
+      "Mathematics, Basic Course (7.5 ECTS)",
+      "Database Technology (6 ECTS)",
+      "Computer Networks (7.5 ECTS)",
+      "Object-Oriented Design (9 ECTS)"
+    ],
+    "year2": [
+      "Operating Systems (7.5 ECTS)",
+      "Sustainable Programming Methods (7.5 ECTS)",
+      "Frontend Development (7.5 ECTS)",
+      "Computer Security (7.5 ECTS)",
+      "Backend Development (7.5 ECTS)",
+      "Algorithms and Data Structures (7.5 ECTS)",
+      "Agile Web Development (7.5 ECTS)",
+      "Mathematical Statistics (7.5 ECTS)"
+    ],
+    "year3": [
+      "Machine Learning (7.5 ECTS)",
+      "Research Methods in Computer Science (7.5 ECTS)",
+      "Mobile Application Development (7.5 ECTS)",
+      "Big Data Analytics (7.5 ECTS)",
+      "Software Engineering (15 ECTS)",
+      "Bachelor Thesis in Computer Science (15 ECTS)"
+    ]
+  }
+}
