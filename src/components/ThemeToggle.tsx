@@ -3,41 +3,43 @@
 import { useEffect, useState } from "react";
 
 export default function ThemeToggle() {
+  const [mounted, setMounted] = useState(false);
   const [isDark, setIsDark] = useState(false);
 
-  // init: läs lagrat tema eller systempreferens
   useEffect(() => {
-    const root = document.documentElement;
-    const stored =
-      typeof window !== "undefined" ? localStorage.getItem("theme") : null;
-    const prefersDark =
-      typeof window !== "undefined" &&
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches;
-
-    const initialDark = stored ? stored === "dark" : prefersDark;
-    setIsDark(initialDark);
-    root.classList.toggle("dark", initialDark);
+    setMounted(true);
+    const html = document.documentElement;
+    setIsDark(html.classList.contains("dark"));
   }, []);
 
-  const toggle = () => {
+  function toggle() {
+    const html = document.documentElement;
     const next = !isDark;
     setIsDark(next);
-    const root = document.documentElement;
-    root.classList.toggle("dark", next);
-    try {
-      localStorage.setItem("theme", next ? "dark" : "light");
-    } catch {}
-  };
+    if (next) html.classList.add("dark");
+    else html.classList.remove("dark");
+    localStorage.setItem("theme", next ? "dark" : "light");
+  }
+
+  if (!mounted) {
+    return (
+      <button
+        aria-label="Toggle theme"
+        className="rounded-lg border px-3 py-1 text-sm opacity-70"
+      >
+        Theme
+      </button>
+    );
+  }
 
   return (
     <button
       onClick={toggle}
-      className="rounded-xl border px-3 py-1 text-sm hover:bg-neutral-50 dark:hover:bg-neutral-900 transition"
       aria-label="Toggle theme"
-      title="Toggle theme"
+      className="rounded-lg border px-3 py-1 text-sm hover:bg-neutral-100 dark:hover:bg-neutral-900 transition"
+      title={isDark ? "Switch to light mode" : "Switch to dark mode"}
     >
-      {isDark ? "Dark" : "Light"}
+      {isDark ? "Light" : "Dark"}
     </button>
   );
 }
