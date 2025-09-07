@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "pixel-snake",
+    "title": "Pixel Snake",
+    "types": ["game", "frontend"],
+    "status": "planned",
+    "tech": ["React", "Canvas"],
+    "repoUrl": "https://github.com/kafajin/pixel-snake",
+    "demoUrl": "",
+    "images": ["/screenshots/pixel-snake-1.png"],
+    "summary": "Snake-spel i webbläsaren med highscore.",
+    "features": ["Touch + keyboard", "Highscore", "Pause/Resume"],
+    "started": "2025-09-07",
+    "tags": ["spel", "react", "canvas"]
+  },
+  {
+    "slug": "skycast",
+    "title": "SkyCast (Weather)",
+    "types": ["frontend", "api"],
+    "status": "planned",
+    "tech": ["Next.js", "OpenWeather", "Recharts"],
+    "repoUrl": "https://github.com/kafajin/skycast",
+    "demoUrl": "",
+    "images": ["/screenshots/skycast-1.png"],
+    "summary": "Väderapp med grafer, geolocation och caching.",
+    "features": ["Sök stad", "Favoriter", "7-dagars graf"],
+    "started": "2025-09-07",
+    "tags": ["väder", "api", "charts"]
+  },
+  {
+    "slug": "moneymap",
+    "title": "MoneyMap (Budget)",
+    "types": ["fullstack"],
+    "status": "planned",
+    "tech": ["Next.js", "Express", "Postgres", "Prisma"],
+    "repoUrl": "https://github.com/kafajin/moneymap",
+    "demoUrl": "",
+    "images": ["/screenshots/moneymap-1.png"],
+    "summary": "Inkomst/utgift, kategorier, export, grafer.",
+    "features": ["Auth", "CRUD", "Export CSV/PDF"],
+    "started": "2025-09-07",
+    "tags": ["fullstack", "budget"]
+  }
+]
